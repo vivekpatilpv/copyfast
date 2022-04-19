@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>While Loop</title>
+  <script type="text/javascript">
+    window.onload = btn;
+
+    function btn() {
+      document.getElementById("btn").onclick = showText;
+    }
+    function showText() {
+  var text = "";
+  var inputOne = document.getElementById("txtBox").value;
+  var inputTwo = document.getElementById( "numBox").value;
+  var i=1; // to control the loop
+  while (i <= inputTwo) {    // i goes from 1 to inputTwo
+   text += inputOne;
+ i++;
+  }
+  document.getElementById("showCode").innerHTML = text;
+}
+  </script>
+</head>
+
+<body>
+
+ 
+
+  
+<input type=" text" id="txtBox"><br/>
+<input type=" number" id="numBox"><br/>
+<button type="button" id="btn">Click</button>
+<p id="showCode"></p>
+</body>
+
+
+</html>

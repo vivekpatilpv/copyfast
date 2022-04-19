@@ -1,0 +1,29 @@
+body{
+    background-color:hsl(138, 100%, 79%);
+    color: #093204;
+ }
+ h1{
+    font-size: 3rem;
+  margin: 50px auto 0px auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #153a1e;
+  padding: 1% 5%;
+    }
+  #form{
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 5%;
+}
+.btn {
+  background: #39db34;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1bf307;
+  text-decoration: none;
+}

@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+   
+  }
+  th{
+    background: rgba(206, 219, 174, 0.616);
+  }
+
+  hr{
+    margin: 2rem 0rem;
+  }
+
+ 

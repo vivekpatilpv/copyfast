@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment-5</title>
+</head>
+
+<body>
+    <h1>Experiment-5</h1>
+    <p>Click the button below to change the background color</p>
+    <button onclick="changeColor()">Click Me</button>
+    <script>
+        var number = -1;
+        function changeColor() {
+            // list of colors
+            var colorList = ["red", "green", "blue", "yellow", "orange", "brown", "purple", "darkcyan", "gold", "blueviolet"];
+            
+            number += 1;
+            document.body.style.backgroundColor = colorList[number];
+            if (number >= colorList.length - 1)
+            {
+                number = -1;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment-4</title>
+    <style>
+        #container {
+            padding: 3% 1% 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Experiment-4</h1>
+    <label for="color"> Select the color : </label>
+
+    <select name="color" id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>
+        <option value="green">Green</option>
+        <option value="cyan">Cyan</option>
+        
+      </select><br><br>
+
+    <input type="button" id="colorButton" value="Click Me" onclick="changeColor()"><br><br>
+
+    <div id="container"><em></em></div>
+    <script>
+        function changeColor() {
+            var color = document.getElementById("color").value;
+            document.getElementById("container").style.backgroundColor = color;
+            document.getElementById("container").innerHTML = "Selected color has been applied to the div tag";
+        }
+    </script>
+
+</body>
+
+</html>
