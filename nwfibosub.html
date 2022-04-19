@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="demo"></div>
+    <script>
+//         // Implement a method that finds the sum of the first n
+// // fibonacci numbers recursively. Assume n > 0
+// let n = window.prompt("Enter number")
+
+
+// let sum = 0;
+// for (let index = 0; index < n; index++) {
+//     sum = sum+index;
+
+// }
+
+
+
+// program to display the sum of natural numbers
+
+// take input from the user
+const number = parseInt(prompt('Enter a positive integer: '));
+
+let sum = 0;
+
+// looping from i = 1 to number
+// in each iteration, i is increased by 1
+for (let i = 1; i <= number; i++) {
+    sum += i;
+}
+
+
+
+document.getElementById("demo").innerHTML ="apna"+sum;
+    </script>
+</body>
+</html>

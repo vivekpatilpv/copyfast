@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<div id="fibo"></div>
+<body>
+	<script>
+		// Javascript Program to find sum
+		// of Fibonacci numbers
+		
+		// Computes value of first
+		// fibonacci numbers
+		let n = window.prompt("Enter");
+		function calculateSum(n)
+		{
+			let fibo = [];
+			if (n <= 0)
+			return 0;
+		
+			fibo[0] = 0;
+			fibo[1] = 1;
+		
+			// Initialize result
+			let sum = fibo[0] + fibo[1];
+		
+			// Add remaining terms
+			for(let i = 2; i <= n; i++)
+			{
+				fibo[i] = fibo[i - 1] +
+							fibo[i - 2];
+				sum += fibo[i];
+			}
+		
+			return sum;
+		}
+		
+			// Driver Code
+			document.write(`Sum of Fibonacci numbers is : ${calculateSum(n)} <br>`);
+		
+		// This code is contributed by _saurabh_jaiswal
+		</script>
+		
+</body>
+</html>
