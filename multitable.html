@@ -1,0 +1,113 @@
+
+for(var i = 0; i < 1; i++){
+    var tabell1 = document.createElement("table");
+    tabell.appendChild(tabell1);
+    //document.write("<table>");
+
+        for(var j = 0; j<11; j++){
+            var rad = document.createElement("tr");
+            tabell.appendChild("tr");
+            //document.write("<tr>");
+
+            for(var k = 1; k<=11; k++){
+                var kolonne = document.createElement("td");
+                tabell.appendChild(kolonne);
+                kolonne.innerHTML = k*(j+1);
+                
+                //document.write("<td>"+ k*(j+1) +"</td>");
+            }
+            //document.write("</tr>");
+        }
+        //document.write("</table>")
+}
+
+<div id="tabell"></div>
+
+
+
+
+
+
+
+
+
+
+
+const table = document.createElement('table');
+
+for (let i = 0; i <= 10; i++){
+  const row = document.createElement('tr');
+  for (let j = 0; j <= 10; j++){
+    const col = document.createElement('td');
+    let val = i * j;
+    if (val === 0) {
+      val = i || j;
+      val = val ? val : '';
+      col.classList.add('header');
+    }
+    col.innerHTML = val;
+    row.appendChild(col);
+  }
+  table.appendChild(row);
+}
+
+document.body.appendChild(table);
+
+
+table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+  }
+  
+  .header {
+    background: #ccf;
+  }
+  
+
+
+
+
+
+
+
+  function createTables(maxNum,limit){
+	const table = document.createElement('table');
+	for(let i = 0;i<maxNum + 1;i++){
+		const row = document.createElement('tr');
+		for(let j = 0;j<limit + 1;j++){
+			const td = document.createElement('td');
+			//Below four lines are new
+			if(i === 0 && j === 0) td.innerHTML = '';
+			else if(i === 0) td.innerHTML = j;
+			else if(j === 0) td.innerHTML = i; 
+			else td.innerHTML = i*j;
+			row.appendChild(td);
+		}
+		table.appendChild(row)
+	}
+	document.body.appendChild(table)
+}
+createTables(10,15);
+
+
+table{
+	border-collapse:collapse;
+}
+td{
+	padding:20px;
+	font-size:25px;
+	background-color:gray;
+	border:2px solid black;
+  text-align:center;
+
+  vertical-align:center;
+  color:white;
+}
+tr > td:nth-child(1),tr:nth-child(1) > td{
+	background:blue;
+}

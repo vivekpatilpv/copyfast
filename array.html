@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>Hello</h1>
+<h2 id="result"></h2>
+<div id="demo"></div>
+<div id="demo1"></div>
+<div id="demo2"></div>
+<div id="demo4"></div>
+    <script>
+        var inputArray = [];
+         var size = 5; //Maximum Array size
+
+            for(var i=0; i<size; i++) {
+                
+                //Taking Input from user
+                inputArray[i] = window.prompt('Enter Element ' + (i+1));
+            }
+            //Print the array in the console.
+            document.getElementById("result").innerHTML = "inputArray is" + inputArray;
+
+
+            //ascending array
+            inputArray.sort(function(a, b){return a-b});
+            document.getElementById("demo").innerHTML = inputArray;
+
+            // Function to add new num
+           
+                inputArray.push(30);
+          
+                document.getElementById("demo1").innerHTML = inputArray;
+
+                //lenght
+                let length =  inputArray.length;
+
+             document.getElementById("demo2").innerHTML = length;
+
+             //position
+         
+
+             document.getElementById("demo4").innerHTML = "Index wala" + inputArray[2];
+
+
+</script>
+    </script>
+</body>
+</html>
